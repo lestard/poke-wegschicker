@@ -2,6 +2,7 @@
   "name": "poke-wegschicker",
   "version": "0.0.1",
   "private": true,
+  "homepage": "http://lestard.github.io/poke-wegschicker",
   "devDependencies": {
     "react-scripts": "0.2.2"
   },
