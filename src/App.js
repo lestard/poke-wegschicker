@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import Wegschicker from './Wegschicker'
-import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
+      <div className="container">
+        <div className="page-header">
           <h1>Poke-Wegschicker</h1>
-		  <p>Wieviele Pokemon kann ich wegschicken, um so viele Entwicklungen machen zu können, wie möglich?</p>
+		  <h2><small>Wieviele Pokemon kann ich wegschicken, um so viele Entwicklungen machen zu können, wie möglich?</small></h2>
         </div>
 		<Wegschicker />
       </div>

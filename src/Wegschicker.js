@@ -56,64 +56,80 @@ class Wegschicker extends Component {
 
 	render() {
 		return (
-			<div className="container">
-				<form className="form-horizontal">
-					<div className="form-group">
-						<label className="col-sm-2 control-label">Bonbons zum Entwickeln</label>
-						<div className="col-sm-10">
-							<select
-								id="candiesToEvolve"
-								name="candiesToEvolve"
-								className="form-control"
-								value={this.state.candiesToEvolve}
-								onChange={this.onValueChanged}
-							>
-								<option value="12">12</option>
-								<option value="25">25</option>
-								<option value="50">50</option>
-								<option value="100">100</option>
-								<option value="400">400</option>
-							</select>
-						</div>
-					</div>
-					<div className="form-group">
-						<label className="col-sm-2 control-label">Anzahl an Bonbons:</label>
-						<div className="col-sm-10">
-							<input
-								id="numberOfCandies"
-								type="number"
-								className="form-control"
-								min="0"
-								max="10000"
-								step="1"
-								value={this.state.numberOfCandies}
-								onChange={this.onValueChanged}
-							/>
-						</div>
-					</div>
-					<div className="form-group">
-						<label className="col-sm-2 control-label">Anzahl an Pokemon:</label>
-						<div className="col-sm-10">
-							<input
-								id="numberOfPokemon"
-								type="number"
-								className="form-control"
-								min="0"
-								max="10000"
-								step="1"
-								value={this.state.numberOfPokemon}
-								onChange={this.onValueChanged}
-							/>
-						</div>
-					</div>
-				</form>
+				<div className="panel panel-default">
+					<div className="panel-body">
+						<form className="form-horizontal">
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Benötigte Bonbons je Entwicklung</label>
+								<div className="col-sm-8">
+									<select
+										id="candiesToEvolve"
+										name="candiesToEvolve"
+										className="form-control"
+										value={this.state.candiesToEvolve}
+										onChange={this.onValueChanged}
+									>
+										<option value="12">12</option>
+										<option value="25">25</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+										<option value="400">400</option>
+									</select>
+								</div>
+							</div>
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Anzahl an Bonbons</label>
+								<div className="col-sm-8">
+									<input
+										id="numberOfCandies"
+										type="number"
+										className="form-control"
+										min="0"
+										max="10000"
+										step="1"
+										value={this.state.numberOfCandies}
+										onChange={this.onValueChanged}
+									/>
+								</div>
+							</div>
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Anzahl an Pokemon</label>
+								<div className="col-sm-8">
+									<input
+										id="numberOfPokemon"
+										type="number"
+										className="form-control"
+										min="0"
+										max="10000"
+										step="1"
+										value={this.state.numberOfPokemon}
+										onChange={this.onValueChanged}
+									/>
+								</div>
+							</div>
+							<hr/>
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Pokemon wegschicken</label>
+								<div className="col-sm-8">
+									<p className="form-control-static">{this.state.pokemonToSendAway}</p>
+								</div>
+							</div>
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Pokemon zum Entwickeln</label>
+								<div className="col-sm-8">
+									<p className="form-control-static">{this.state.pokemonToEvolve}</p>
+								</div>
+							</div>
+							<div className="form-group">
+								<label className="col-sm-4 control-label">Bonbons nachher übrig</label>
+								<div className="col-sm-8">
+									<p className="form-control-static">{this.state.candiesLeft}</p>
+								</div>
+							</div>
+						</form>
 
-				<div>
-					<p>Pokemon wegschicken: {this.state.pokemonToSendAway}</p>
-					<p>Pokemon zum Entwickeln: {this.state.pokemonToEvolve}</p>
-					<p>Bonbons nachher übrig: {this.state.candiesLeft}</p>
+					</div>
 				</div>
-			</div>
 		)
 	}
 }
