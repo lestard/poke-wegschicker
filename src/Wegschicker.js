@@ -7,8 +7,8 @@ class Wegschicker extends Component {
 		super(props)
 		this.state = {
 			candiesToEvolve: 12,
-			numberOfCandies: 126,
-			numberOfPokemon: 20,
+			numberOfCandies: 0,
+			numberOfPokemon: 0,
 			pokemonToSendAway: 0,
 			pokemonToEvolve: 0,
 			candiesLeft: 0
