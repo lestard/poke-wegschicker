@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h1>Poke-Wegschicker</h1>
-		  <p>Wieviele Pokemon kann ich wegschicken, um trotzdem optimal mit einem Glücksei entwickeln zu können?</p>
+		  <p>Wieviele Pokemon kann ich wegschicken, um so viele Entwicklungen machen zu können, wie möglich?</p>
         </div>
 		<Wegschicker />
       </div>

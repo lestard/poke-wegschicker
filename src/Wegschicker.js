@@ -31,11 +31,25 @@ class Wegschicker extends Component {
 		const numberOfPokemon = this.state.numberOfPokemon;
 		const candiesToEvolve = this.state.candiesToEvolve;
 
-		if(!(numberOfPokemon && numberOfCandies && candiesToEvolve)) {
+		if(!(numberOfPokemon && candiesToEvolve)) {
+			this.setState({
+				pokemonToSendAway: 0,
+				pokemonToEvolve: 0,
+				candiesLeft: numberOfCandies
+			})
 			return
 		}
 
-		// todo math
+
+		const pokemonToSendAway = Math.max(0, Math.ceil(numberOfPokemon + (1 - numberOfPokemon - numberOfCandies) / candiesToEvolve));
+		const pokemonToEvolve = numberOfPokemon - pokemonToSendAway
+		const candiesLeft = numberOfCandies - (pokemonToEvolve * candiesToEvolve) + pokemonToSendAway + pokemonToEvolve
+
+		this.setState({
+			pokemonToSendAway,
+			pokemonToEvolve,
+			candiesLeft
+		})
 	}
 
 
@@ -78,7 +92,7 @@ class Wegschicker extends Component {
 						</div>
 					</div>
 					<div className="form-group">
-						<label className="col-sm-2 control-label">Anzahl an Pokemons:</label>
+						<label className="col-sm-2 control-label">Anzahl an Pokemon:</label>
 						<div className="col-sm-10">
 							<input
 								id="numberOfPokemon"
@@ -95,8 +109,8 @@ class Wegschicker extends Component {
 				</form>
 
 				<div>
-					<p>Pokemon zum Entwickeln: {this.state.pokemonToEvolve}</p>
 					<p>Pokemon wegschicken: {this.state.pokemonToSendAway}</p>
+					<p>Pokemon zum Entwickeln: {this.state.pokemonToEvolve}</p>
 					<p>Bonbons nachher übrig: {this.state.candiesLeft}</p>
 				</div>
 			</div>
