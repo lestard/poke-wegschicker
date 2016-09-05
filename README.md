@@ -14,7 +14,7 @@ Allerdings berechnet PidgeyCalc die *minimal* mögliche Anzahl an Pokemon, die w
 Nach dem Entwickeln bleiben also eventuell noch Pokemon übrig, die nicht mehr entwickelt werden können.
 Für die Planung eines "Glücks-Ei-Einsatzes" ist das OK.
 
-Das ist aber ungünstig, wenn ich unterwegs auf Pokemon-Jagt bin.
+Das ist aber ungünstig, wenn ich im hohen Gras unterwegs auf Pokemon-Jagt bin.
 Dann möchte ich möglichst viele Pokemon fangen, ohne dass überflüssige Pokemon wertvollen Platz in meinem Rucksack wegnehmen.
 Mit dieser App kann ich ausrechnen, wieviele Pokemon ich maximal wegschicken kann.
 
@@ -34,6 +34,6 @@ However, PidgeyCalc calculates the *minimal* number of Pokemon to send away.
 After evolving all possible Pokemon there may be Pokemon left that can't be evolved anymore.
 This is ok for planing a "lucky egg action".
 
-But it's inconvinient when I'm on the way for Pokemon hunt.
+But it's inconvinient when I'm on the way in the tall grass for Pokemon hunt.
 In this case I like to catch as many Pokemon as possible without unnecessary Pokemon taking valuable space in my backpack.
 With this app I can calculate how many Pokemon I can maximally send away.
