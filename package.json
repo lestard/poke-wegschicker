@@ -5,7 +5,7 @@
   "homepage": "http://lestard.github.io/poke-wegschicker",
   "devDependencies": {
     "react-addons-test-utils": "^15.3.1",
-    "react-scripts": "0.4.1"
+    "react-scripts": "0.6.1"
   },
   "dependencies": {
     "react": "^15.3.1",
