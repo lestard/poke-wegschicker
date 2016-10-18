@@ -1,0 +1,23 @@
+{
+  "short_name": "Poke Wegschicker",
+  "name": "Poke Wegschicker",
+  "description": "App for Pokemon GO players that calculates how many pokemon you can send away for candies",
+  "icons": [
+    {
+      "src":"icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src":"icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src":"icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone"
+}
